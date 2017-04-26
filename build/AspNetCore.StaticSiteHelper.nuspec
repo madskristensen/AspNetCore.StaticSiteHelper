@@ -10,6 +10,13 @@
         <projectUrl>https://github.com/madskristensen/AspNetCoreStaticSiteHelper</projectUrl>
         <tags>asp.net core static</tags>
         <iconUrl>https://raw.githubusercontent.com/madskristensen/AspNetCore.StaticSiteHelper/master/icon.png</iconUrl>
+
+        <dependencies>
+            <dependency id="Microsoft.AspNetCore" version="1.1.1" />
+            <dependency id="Microsoft.AspNetCore.Server.IISIntegration" version="1.1.1" />
+            <dependency id="Microsoft.AspNetCore.Server.Kestrel" version="1.1.1" />
+            <dependency id="Microsoft.AspNetCore.StaticFiles" version="1.1.1" />
+        </dependencies>
     </metadata>
 
     <files>

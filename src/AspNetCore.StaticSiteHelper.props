@@ -5,8 +5,4 @@
         <Compile Include="$(MSBuildThisFileDirectory)..\tools\*.cs" />
     </ItemGroup>
 
-    <Target AfterTargets="Build">
-        <Message Importance="high" Text="foo" />
-    </Target>
-
 </Project>
