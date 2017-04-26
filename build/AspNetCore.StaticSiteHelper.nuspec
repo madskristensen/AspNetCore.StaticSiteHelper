@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+    <metadata>
+        <id>AspNetCore.StaticSiteHelper</id>
+        <title>ASP.NET Core Static Site Helper</title>
+        <summary>A package that keeps your static website free of boilerplate ASP.NET Core files.</summary>
+        <version>1.0.0</version>
+        <description>A package that keeps your static website free of boilerplate ASP.NET Core files.</description>
+        <authors>Mads Kristensen</authors>
+        <projectUrl>https://github.com/madskristensen/AspNetCoreStaticSiteHelper</projectUrl>
+        <tags>asp.net core static</tags>
+        <iconUrl>https://raw.githubusercontent.com/madskristensen/AspNetCoreTemplatePack/master/src/Static.Web/.template.config/icon.json</iconUrl>
+    </metadata>
+
+    <files>
+        <file src="..\src\*.cs" target="tools" />
+        <file src="..\src\*.props" target="build" />
+    </files>
+</package>

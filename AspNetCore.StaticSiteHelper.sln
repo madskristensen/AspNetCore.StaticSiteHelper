@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{38E3E64E-9FF1-442C-BC4F-EC06DFC63958}"
+	ProjectSection(SolutionItems) = preProject
+		src\AspNetCore.StaticSiteHelper.props = src\AspNetCore.StaticSiteHelper.props
+		src\Startup.cs = src\Startup.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{3B42AB27-95F9-45C1-A7C7-1FDA70561B60}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		build\AspNetCore.StaticSiteHelper.nuspec = build\AspNetCore.StaticSiteHelper.nuspec
+		build\build.cmd = build\build.cmd
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
