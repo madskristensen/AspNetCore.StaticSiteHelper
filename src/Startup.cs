@@ -25,6 +25,7 @@ namespace Static.Web
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseBrowserLink();
             }
 
             app.UseFileServer();

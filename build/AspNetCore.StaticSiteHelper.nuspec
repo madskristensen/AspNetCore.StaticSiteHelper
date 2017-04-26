@@ -7,7 +7,7 @@
         <version>1.0.0</version>
         <description>A package that keeps your static website free of boilerplate ASP.NET Core files.</description>
         <authors>Mads Kristensen</authors>
-        <projectUrl>https://github.com/madskristensen/AspNetCoreStaticSiteHelper</projectUrl>
+        <projectUrl>https://github.com/madskristensen/AspNetCore.StaticSiteHelper</projectUrl>
         <tags>asp.net core static</tags>
         <iconUrl>https://raw.githubusercontent.com/madskristensen/AspNetCore.StaticSiteHelper/master/icon.png</iconUrl>
 
@@ -16,6 +16,7 @@
             <dependency id="Microsoft.AspNetCore.Server.IISIntegration" version="1.1.1" />
             <dependency id="Microsoft.AspNetCore.Server.Kestrel" version="1.1.1" />
             <dependency id="Microsoft.AspNetCore.StaticFiles" version="1.1.1" />
+            <dependency id="Microsoft.VisualStudio.Web.BrowserLink.Loader" version="14.1.0" />
         </dependencies>
     </metadata>
 
