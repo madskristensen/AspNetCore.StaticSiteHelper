@@ -9,7 +9,7 @@
         <authors>Mads Kristensen</authors>
         <projectUrl>https://github.com/madskristensen/AspNetCoreStaticSiteHelper</projectUrl>
         <tags>asp.net core static</tags>
-        <iconUrl>https://raw.githubusercontent.com/madskristensen/AspNetCoreTemplatePack/master/src/Static.Web/.template.config/icon.json</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/madskristensen/AspNetCore.StaticSiteHelper/master/icon.png</iconUrl>
     </metadata>
 
     <files>
