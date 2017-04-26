@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{3B42AB27
 		appveyor.yml = appveyor.yml
 		build\AspNetCore.StaticSiteHelper.nuspec = build\AspNetCore.StaticSiteHelper.nuspec
 		build\build.cmd = build\build.cmd
+		readme.md = readme.md
 	EndProjectSection
 EndProject
 Global
