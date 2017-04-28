@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{38E3E64E-9FF1-442C-BC4F-EC06DFC63958}"
 	ProjectSection(SolutionItems) = preProject
 		src\AspNetCore.StaticSiteHelper.props = src\AspNetCore.StaticSiteHelper.props
+		src\AspNetCore.StaticSiteHelper.targets = src\AspNetCore.StaticSiteHelper.targets
 		src\Startup.cs = src\Startup.cs
 	EndProjectSection
 EndProject

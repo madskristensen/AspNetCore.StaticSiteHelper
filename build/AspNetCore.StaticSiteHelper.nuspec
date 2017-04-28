@@ -23,5 +23,6 @@
     <files>
         <file src="..\src\*.cs" target="tools" />
         <file src="..\src\*.props" target="build" />
+        <file src="..\src\*.targets" target="build" />
     </files>
 </package>
