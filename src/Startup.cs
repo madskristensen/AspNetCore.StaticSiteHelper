@@ -1,7 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.IO;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Logging;
-using System.IO;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace Static.Web
 {
@@ -28,7 +32,35 @@ namespace Static.Web
                 app.UseBrowserLink();
             }
 
+            LoadMimeTypesFromFile(app, env);
             app.UseFileServer();
+        }
+
+        private static void LoadMimeTypesFromFile(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            string mimeTypeFile = Path.Combine(env.ContentRootPath, "mimetypes.json");
+
+            if (!File.Exists(mimeTypeFile))
+            {
+                return;
+            }
+
+            string mimeTypes = File.ReadAllText(mimeTypeFile);
+            var obj = JObject.Parse(mimeTypes);
+            var map = JsonConvert.DeserializeObject<Dictionary<string, string>>(mimeTypes);
+            var provider = new FileExtensionContentTypeProvider();
+
+            foreach (string ext in map.Keys)
+            {
+                provider.Mappings[ext] = map[ext];
+            }
+
+            var options = new StaticFileOptions
+            {
+                ContentTypeProvider = provider
+            };
+
+            app.UseStaticFiles(options);
         }
     }
 }
