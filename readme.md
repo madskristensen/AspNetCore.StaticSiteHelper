@@ -2,7 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/sm6gqiopehjf1g1n?svg=true)](https://ci.appveyor.com/project/madskristensen/aspnetcore-staticsitehelper)
 
-Used by the static web template
+Used by the [ASP.NET Core static web template](https://github.com/madskristensen/AspNetCoreTemplatePack).
 
 ## MimeType mappings
 All standard mime types defined [here by ASP.NET Core](https://github.com/aspnet/StaticFiles/blob/dev/src/Microsoft.AspNetCore.StaticFiles/FileExtensionContentTypeProvider.cs) is enabled, but you can modify the supported file extensions/mime types.
